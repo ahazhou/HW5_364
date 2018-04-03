@@ -1,1 +1,13 @@
+{% extends 'index.html' %}
 
+{% block nav %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+    <form action="" method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.priority.label }}{{ form.priority }}
+        {{ form.update }}
+    </form>
+{% endblock %}
